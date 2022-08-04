@@ -1,3 +1,10 @@
+import ToggleDarkMode from './ToggleDarkMode';
+
 export default function Header() {
-  return <header className='sticky top-0 z-50 bg-white'></header>;
+  return (
+    <header className='flex justify-between'>
+      <h1>TO DO</h1>
+      <ToggleDarkMode />
+    </header>
+  );
 }
