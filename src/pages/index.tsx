@@ -5,7 +5,9 @@ export default function HomePage() {
   return (
     <Layout>
       <Seo />
-      <h1>hello</h1>
+      <div className='layout bg-yellow-200'>
+        <h1>Hello World</h1>
+      </div>
     </Layout>
   );
 }
