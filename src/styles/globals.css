@@ -48,6 +48,6 @@
     /* 1100px */
     /* 1536px */
     max-width: 68.75rem;
-    @apply mx-auto min-h-screen w-10/12 py-8 font-josefin sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-5/12;
+    @apply mx-auto min-h-screen w-10/12  font-josefin sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-5/12;
   }
 }

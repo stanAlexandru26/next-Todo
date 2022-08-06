@@ -4,7 +4,6 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
-  plugins: [require('@tailwindcss/forms')],
   theme: {
     extend: {
       fontFamily: {
@@ -24,6 +23,8 @@ module.exports = {
         dark_veryDarkGreyBlue: 'hsl(233, 14%, 35%)',
         dark_veryDarkGreyBlue2: 'hsl(237, 14%, 26%)',
         brightBlue: 'hsl(220, 98%, 61%)',
+        gradientCyan: 'hsl(192, 100%, 67%)',
+        gradientPurple: 'hsl(280, 87%, 65%)',
       },
       backgroundImage: {
         background_desktop_dark: 'url(/images/bg-desktop-dark.jpg)',
@@ -33,4 +34,5 @@ module.exports = {
       },
     },
   },
+  plugins: [require('@tailwindcss/forms')],
 };
