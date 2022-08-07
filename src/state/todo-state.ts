@@ -2,14 +2,21 @@ import { nanoid } from 'nanoid';
 import { useCallback } from 'react';
 import { atom, useRecoilState } from 'recoil';
 
+const defaultTodoList: TodoItemType[] = [
+  { id: nanoid(), text: 'Drink Water', isComplete: true },
+  { id: nanoid(), text: 'Learn TypeScript', isComplete: false },
+  { id: nanoid(), text: 'Finish Front End Mentor Todo List', isComplete: true },
+  { id: nanoid(), text: 'Read fir 1 hour', isComplete: false },
+];
 export type TodoItemType = {
   id: string;
   text: string;
   isComplete: boolean;
 };
+
 export const todoListState = atom<TodoItemType[]>({
   key: 'todoListState',
-  default: [],
+  default: defaultTodoList,
 });
 
 function replaceItemAtIndex(
