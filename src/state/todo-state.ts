@@ -6,7 +6,7 @@ const defaultTodoList: TodoItemType[] = [
   { id: nanoid(), text: 'Drink Water', isComplete: true },
   { id: nanoid(), text: 'Learn TypeScript', isComplete: false },
   { id: nanoid(), text: 'Finish Front End Mentor Todo List', isComplete: true },
-  { id: nanoid(), text: 'Read fir 1 hour', isComplete: false },
+  { id: nanoid(), text: 'Read for 1 hour', isComplete: false },
 ];
 export type TodoItemType = {
   id: string;
