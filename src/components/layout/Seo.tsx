@@ -5,7 +5,7 @@ const defaultMeta = {
   title: 'Next-Todo | Stan Alexandru Stefan',
   siteName: 'Next-Todo | Stan Alexandru Stefan',
   description: 'A Todo app built with Next.js,TypeScript and TailwindCSS.',
-  url: 'test',
+  url: 'https://todo.stefan-stan.dev',
   type: 'website',
   robots: 'follow, index',
 

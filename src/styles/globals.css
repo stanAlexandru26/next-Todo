@@ -10,7 +10,7 @@
     src: url('/fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
   }
   body {
-    @apply bg-light_veryLightGrey dark:bg-dark_veryDarkBlue;
+    @apply bg-light_veryLightGreyBlue dark:bg-dark_veryDarkBlue;
   }
   h1,
   .h1 {
@@ -49,5 +49,15 @@
     /* 1536px */
     max-width: 68.75rem;
     @apply mx-auto min-h-screen w-10/12  font-josefin sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-5/12;
+  }
+
+  .gradient {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
   }
 }
