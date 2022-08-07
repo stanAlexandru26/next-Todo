@@ -3,9 +3,9 @@ import { useRecoilValue } from 'recoil';
 
 import clsxm from '@/lib/clsxm';
 
-import { todoListState, useTodoList } from '@/state/todo-state';
+import { TodoItemType, todoListState, useTodoList } from '@/state/todo-state';
 
-function TodoItem({ item }) {
+function TodoItem({ item }: { item: TodoItemType }) {
   const todoList = useRecoilValue(todoListState);
   const { deleteItemAtIndex, toggleItemCompletionAtIndex } = useTodoList();
   const index = useMemo(

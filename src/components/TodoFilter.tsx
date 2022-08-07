@@ -1,9 +1,10 @@
-import { MouseEventHandler, ReactElement, useCallback } from 'react';
+import { ReactElement, useCallback } from 'react';
 import { useRecoilValue } from 'recoil';
 
 import clsxm from '@/lib/clsxm';
 
 import {
+  FilterType,
   FilterValue,
   todoListFilterState,
   useFilter,
@@ -16,8 +17,8 @@ function TodoFilter(): ReactElement {
   const filter = useRecoilValue(todoListFilterState);
 
   const { setListFilter } = useFilter();
-  const updateFilter: MouseEventHandler<Element> = useCallback(
-    (value) => {
+  const updateFilter = useCallback(
+    (value: FilterType) => {
       setListFilter(value);
     },
     [setListFilter]

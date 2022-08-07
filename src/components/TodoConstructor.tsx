@@ -1,4 +1,9 @@
-import { ChangeEventHandler, useCallback, useState } from 'react';
+import {
+  ChangeEventHandler,
+  KeyboardEvent,
+  useCallback,
+  useState,
+} from 'react';
 
 import clsxm from '@/lib/clsxm';
 
@@ -20,7 +25,7 @@ function TodoConstructor() {
     []
   );
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       addItem();
     }
